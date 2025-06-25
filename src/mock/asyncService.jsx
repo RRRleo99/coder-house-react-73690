@@ -1,41 +1,41 @@
 
-const products = [
+export const products = [
 {
-    id: "01",
-    name:"Zapatillas",
+
+    name:"Zapatillas Blancas",
     price: 700,
     description:"Zapatillas 2025",
-    stock:"04",
+    stock: 4,
     img: "../zapasWhite.jpg",
     category:"Zapatillas"
 },
 
 {
-    id: "02",
-    name:"Calcetines",
+
+    name:"Calcetines Largos",
     price: 900,
     description:"Calcetines invierno",
-    stock:"04",
+    stock: 4,
     img: "../mediasWhite.jpg",
     category:"Calcetines"
 },
 
 {
-    id: "03",
-    name:"Pulseras",
+
+    name:"Pulseras de Rock",
     price: 1200,
     description:"Pulseras para hombres",
-    stock:"20",
+    stock: 20,
     img: "../puls.jpg",
     category:"Pulseras"
 },
 
 {
-    id: "04",
-    name:"Oferta",
+
+    name:"Oferta de julio",
     price: 7000,
     description:"Oferta de temporada",
-    stock:"01",
+    stock:1,
     img: "../zapatillas.jpg",
     category:"Oferta"
 },
