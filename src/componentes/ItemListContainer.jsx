@@ -3,7 +3,7 @@ import {getProducts, products} from "../mock/asyncService"
 import ItemLista from './ItemLista'
 import { useParams } from 'react-router-dom'
 import LoaderComponent from './LoaderComponent'
-import { collection, getDocs, query, where, addDoc } from 'firebase/firestore/lite'
+import { collection, getDocs, query, where, addDoc } from 'firebase/firestore'
 import {db} from '../service/fireBase'
 
 
