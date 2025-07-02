@@ -3,9 +3,9 @@ import {getProducts, products} from "../mock/asyncService"
 import ItemLista from './ItemLista'
 import { useParams } from 'react-router-dom'
 import LoaderComponent from './LoaderComponent'
-import { collection, getDocs } from 'firebase/firestore/lite'
+import { collection, getDocs, query, where, addDoc } from 'firebase/firestore/lite'
 import {db} from '../service/fireBase'
-import { query, where } from 'firebase/firestore'
+
 
 
 const ItemListContainer = ({greeting}) => {
@@ -29,6 +29,7 @@ const [loading, setLoading] = useState(false)
       
       })
     console.log(list)
+    setData(list)
 })
 
 .catch((error)=> console.log(error))

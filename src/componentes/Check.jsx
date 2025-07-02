@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext'
 import { collection, serverTimestamp } from 'firebase/firestore'
 
-const Checkout = () => {
+const Check = () => {
     const [buyer, setBuyer]= useState({})
     const [validateEmail, setValidateEmail]= useState("")
     const[orderId, setOrderId]= useState ("")
@@ -66,4 +66,4 @@ const Checkout = () => {
   )
 }
 
-export default Checkout
+export default Check

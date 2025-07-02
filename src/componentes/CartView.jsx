@@ -25,7 +25,7 @@ const CartView = () => {
       <span>Tolatl a pagar: ${cartTotal()},00</span>
       <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", width:"80%", padding:"2rem"}}>
           <button className='btn btn-danger' onClick={clear}>Borrar</button>
-         <link to='/Checkout' className='btn btn-dark'>Terminar compra</link>
+         <link to='/Check' className='btn btn-dark'>Terminar compra</link>
       </div>
     </div>
   )
