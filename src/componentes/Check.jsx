@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext'
 import { collection, serverTimestamp } from 'firebase/firestore'
+import { Link } from 'react-router-dom';
 
 const Check = () => {
     const [buyer, setBuyer]= useState({})
@@ -47,7 +48,7 @@ const Check = () => {
         ? <div>
             <h2>Generaste correctamente tu ordn</h2>
             <h2>El id es: {orderId}</h2>
-            <link to='/' className='btn btn-dark'>Volver al inicio</link>
+            <Link to='/' className='btn btn-dark'>Volver al inicio</Link>
         </div>
 
         : <div>

@@ -11,11 +11,14 @@ import Check from './componentes/Check';
 
 
 
+
 function App() {
 
   return (
     <BrowserRouter>
+    
     <NavBarBs/>
+    
     <Routes>
     <Route path='/' element={<ItemListContainer greeting="Apolo web"/>}/>
     <Route path='/category/:categoryId' element={<ItemListContainer greeting="Estas en la categoria: "/>}/>
@@ -24,6 +27,8 @@ function App() {
     <Route path='/check' element={<Check/>}/>
     <Route path='#' element={<Error/>}/>
     </Routes>
+
+    
     </BrowserRouter>
   )
 }

@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import LoaderComponent from './LoaderComponent'
 import { collection, doc, getDoc } from 'firebase/firestore'
 import {db} from '../service/fireBase'
+import { Link } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
     const [detalle, setDetalle] = useState ({})
@@ -41,7 +42,7 @@ const ItemDetailContainer = () => {
       return(
         <div>
           <h2>El producto no existe</h2>
-          <link className='btm btn-dark'>Volver al inicio</link>
+          <Link className='btm btn-dark'>Volver al inicio</Link>
         </div>
       )
     }

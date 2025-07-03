@@ -1,5 +1,6 @@
 import { Badge } from "react-bootstrap";
 import { BsCartPlusFill } from "react-icons/bs";
+import { CartContext } from "../context/CartContext";
 const CartWidget = () => {
 
     return(

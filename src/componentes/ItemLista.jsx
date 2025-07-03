@@ -4,7 +4,7 @@ import Item from './Item'
 const ItemLista = ({data}) => {
   return (
     <div style={{display: "flex", justifyContent: "space-between", alignItems:"center"}}>
-        {data.map((prod)=><item key={prod.id} prod={prod}/>)}
+        {data.map((prod)=><Item key={prod.id} prod={prod}/>)}
     </div>
   )
 }
