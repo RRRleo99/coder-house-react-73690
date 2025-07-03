@@ -15,6 +15,7 @@ import Check from './componentes/Check';
 function App() {
 
   return (
+    <CartProvaider>
     <BrowserRouter>
     
     <NavBarBs/>
@@ -30,6 +31,7 @@ function App() {
 
     
     </BrowserRouter>
+    </CartProvaider>
   )
 }
 

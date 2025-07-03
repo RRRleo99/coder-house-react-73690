@@ -24,8 +24,10 @@ const ItemDetail = ({ detalle }) => {
       <p>stock: {detalle.stock} unidades</p>
       {quantity > 0 ? (
         <Link to="/cart">Ir al carrito</Link>
+        
       ) : (
         <ItemCount stock={detalle.stock} onAdd={onAdd} />
+        
       )}
     </div>
   );
