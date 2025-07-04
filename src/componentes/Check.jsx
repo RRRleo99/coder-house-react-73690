@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext'
-import { collection, serverTimestamp } from 'firebase/firestore'
+import { collection, serverTimestamp, addDoc } from 'firebase/firestore'
+import { db } from '../service/fireBase';
 import { Link } from 'react-router-dom';
 
 const Check = () => {

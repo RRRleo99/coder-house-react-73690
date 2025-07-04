@@ -36,7 +36,7 @@ export const products = [
     price: 7000,
     description:"Oferta de temporada",
     stock:1,
-    img: "../zapatillas.jpg",
+    img: "../zapatilla.jpg",
     category:"Oferta"
 },
 ]

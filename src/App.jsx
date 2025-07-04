@@ -15,9 +15,9 @@ import Check from './componentes/Check';
 function App() {
 
   return (
-    <CartProvaider>
-    <BrowserRouter>
     
+    <BrowserRouter>
+    <CartProvaider>
     <NavBarBs/>
     
     <Routes>
@@ -29,9 +29,9 @@ function App() {
     <Route path='#' element={<Error/>}/>
     </Routes>
 
-    
-    </BrowserRouter>
     </CartProvaider>
+    </BrowserRouter>
+   
   )
 }
 
