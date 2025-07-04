@@ -23,7 +23,9 @@ const ItemDetail = ({ detalle }) => {
       <p>${detalle.price}</p>
       <p>stock: {detalle.stock} unidades</p>
       {quantity > 0 ? (
+       <button className='btn btn-dark'>
         <Link to="/cart">Ir al carrito</Link>
+       </button> 
         
       ) : (
         <ItemCount stock={detalle.stock} onAdd={onAdd} />
