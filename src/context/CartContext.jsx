@@ -6,7 +6,7 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState ([])
 
     const addItem = (item, cantidad)=> {
-        console.log("agregando iteem", item, quantity)
+        console.log("agregando iteem", item, cantidad)
 
     if(isInCart(item.id)){
 
@@ -29,6 +29,7 @@ export const CartProvider = ({children}) => {
 
     }
 }
+console.log(cart)
 
     const clear = ()=> {
         setCart([])
@@ -56,3 +57,5 @@ return (
     </CartContext.Provider>
 )
 }
+
+
